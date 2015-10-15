@@ -1,0 +1,115 @@
+<!--
+  There are two missing closing tags in this document. Make sure you add them back in.
+-->
+
+<!-- The header element should have a 1px border. Color, you pick -->
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Quiz-2</title>
+  <link rel="stylesheet" type="text/css" href="quiz-1.css">
+</head>
+
+<body>
+
+<header>
+  <!-- 
+    1. Convert the ul in the navigation element into a series of horizontal links with # as the href value, without bullets, and have some space between them horizontally.
+    2. Ensure that the navigation is semantically marked as such (i.e. wrap it in the correct HTML tag)
+  -->
+  <p><a href="#">Home</a>
+      <a href="#">Profile</a>
+      <a href="#">Blog</a>
+  </p>
+
+</header>
+
+<!--
+  1. Any text in an element with class "disabled" should be colored grey, unless it is inside an anchor tag. If inside an anchor, it should be colored purple.
+  2. Any text inside an element with a class of "active" should be colored yellow.
+  3. Section elements should be contained within an article element.
+-->
+<article>
+  <section>
+    <div class="month-list">
+      <ul>
+        <li>
+          <a>January</a>
+          <span class="disabled1">My favorite month</span>
+        </li>
+        <li>
+          <a>
+            <span class="active">February</span>
+          </a>
+        </li>
+        <li>
+          <a>
+            <span class="disabled">March</span>
+          </a>
+        </li>
+        <li>
+          <a>April</a>
+        </li>
+        <li>
+          <a>
+            <div class="promo">
+              <span class="disabled">May</span>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a>June</a>
+        </li>
+        <li>
+          <a>July</a>
+        </li>
+        <li>
+          <a>August</a>
+          <span class="disabled1">My least favorite month</span>
+        </li>
+        <li>
+          <a>September</a>
+        </li>
+      </ul>
+    </div>
+  </section>
+</article>
+<!--
+  1. Make the "I'm red" text colored red
+  2. Make the "I'm blue" text colored blue
+  3. The sibling h4 of the red element should have a background color of red
+  4. The sibling h4 of the blue element should have background color of blue
+  5. An h4 that is a direct child of grandparent should have a 1px border with rounded corners.
+-->
+<div class="grandparent">
+  <div class="parent">
+    <h4>Child of parent</h4>
+    <div>
+      <div class="imred">I'm red!</div>
+      <h4 class="imred2">I'm red's sister</h4>
+      <div class="imblue">I'm blue!</div>
+      <h4 class="imblue2">I'm blue's brother</h4>
+    </div>
+  </div>
+  <h4 class="childomine">Child of grandparent</h4>
+</div>
+
+<footer class="padded">
+  <div class="promo">
+    Purchase a book today and receive the eBook for free!
+  </div>
+
+  <div class="disclaimer">
+    Only one purchase per household. 
+    <a href="#"></a>
+      <span class="footer-link">
+        <span class="disabled">
+          Privacy Policy
+        </span>
+      </span>
+
+  </div>
+</footer>
+</body>
